@@ -7,7 +7,6 @@ body {
   background-color: #1E252B;
   width: 100%;
   height: 74px;
-  border: 1px dashed green;
 }
 
 .header__container {
@@ -100,7 +99,7 @@ input[type="checkbox"]:checked + label::after {
   color: rgba(255, 255, 255, 0.55);
 }
 
-.header__signup a {
+.header__signup a, .main__search-btn a {
   text-decoration: none;
   font-family: 'Poppins';
   font-weight: 600;
@@ -119,7 +118,7 @@ input[type="checkbox"]:checked + label::after {
   color: #FDF5FF;
 }
 
-.header__signup {
+.header__signup, .main__search-btn {
   width: 118px;
   height: 48px;
   background-color: #FF6E30;
@@ -128,7 +127,7 @@ input[type="checkbox"]:checked + label::after {
   cursor: pointer;
 }
 
-.container {
+.main {
   background-color: #1E252B;
   background-image: url('./img/hero.png');
   background-position: right;
@@ -137,37 +136,102 @@ input[type="checkbox"]:checked + label::after {
   height: 626px;
 }
 
-.example-inner {
+.main__container {
   margin: 0 auto;
-  border: 1px dashed green;
+  border: 1px dashed transparent;
   width: 1224px;
   height: 100%;
 }
 
-/* .catigories__rollup-btn {
+.main__left-section {
   position: relative;
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  margin: 0;
-  background-color: transparent;
-  border: none;
-  cursor: pointer; }
-  .catigories__rollup-btn::after {
-    content: "";
-    position: absolute;
-    top: calc(50% - 5px);
-    left: 50%;
-    width: 10px;
-    height: 10px;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-            transform: translate(-50%, -50%) rotate(45deg);
-    -webkit-transition: border-color 0.2s, -webkit-transform 0.6s;
-    transition: border-color 0.2s, -webkit-transform 0.6s;
-    transition: border-color 0.2s, transform 0.6s;
-    transition: border-color 0.2s, transform 0.6s, -webkit-transform 0.6s; }
-  .catigories__rollup-btn:hover::after {
-    border-color: #FF6E30; } */
+  margin-top: 104px;
+  width: 554px;
+  height: 522px;
+}
+
+.main__socials {
+  position: absolute;
+  bottom: 0;
+}
+
+.main__title {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.main__description {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.main__search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 18px;
+  padding-right: 11px;
+  width: 470px;
+  height: 64px;
+  background: #283036;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#search {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  height: 21px;
+  line-height: 21px;
+  background-color: #283036;
+  color: rgba(255, 255, 255, 0.38);
+  border-style: none;
+}
+
+.main__socials-btn {
+  width: 58px;
+  height: 58px;
+  background: #1E252B;
+  border-style: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main__socials-facebook {
+  background-image: url('img/facebook-icon.svg');
+}
+
+.main__socials-facebook:hover {
+  background-image: url('img/facebook-icon-hover.svg');
+  cursor: pointer;
+}
+
+.main__socials-instagram {
+  background-image: url('img/instagram-icon.svg');
+}
+
+.main__socials-instagram:hover {
+  background-image: url('img/instagram-icon-hover.svg');
+  cursor: pointer;
+}
+
+.main__socials-twitter {
+  background-image: url('img/twitter-icon.svg');
+}
+
+.main__socials-twitter:hover {
+  background-image: url('img/twitter-icon-hover.svg');
+  cursor: pointer;
+}
