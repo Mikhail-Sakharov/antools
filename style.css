@@ -296,6 +296,8 @@ input[type="checkbox"]:checked + label::after {
 .popular__grid-item:hover {
   transition: 0.3s;
   transform: translate(0, -20px);
+  background: rgba(40, 48, 54, 0.6);
+  backdrop-filter: blur(25px);
 }
 
 .popular__load-more {
@@ -463,4 +465,46 @@ input[type="checkbox"]:checked + label::after {
   background: #FF6E30;
   border-radius: 8px;
   color: #FFFFFF;
+}
+
+.brands {
+  background-color: #1E252B;
+  width: 100%;
+}
+
+.brands__container {
+  border: 1px dashed green;
+  margin: 0 auto;
+  width: 1224px;
+  height: auto;
+}
+
+.brands__wrapper {
+  border: 1px dashed green;
+  margin-top: 200px;
+  width: 1224px;
+  height: 253px;
+  background: rgba(44, 53, 61, 0.2);
+  backdrop-filter: blur(25px);
+  border-radius: 25px;
+}
+
+.brands__title {
+  margin-top: 55px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.brands__logos {
+  border: 1px dashed green;
+  display: flex;
+  justify-content: space-between;
+  margin: 55px auto 0;
+  width: 1059px;
+  height: auto;
 }
