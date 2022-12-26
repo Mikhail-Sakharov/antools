@@ -127,6 +127,10 @@ input[type="checkbox"]:checked + label::after {
   cursor: pointer;
 }
 
+.header__signup:hover, .main__search-btn:hover {
+  opacity: 0.7;
+}
+
 .main {
   background-color: #1E252B;
   background-image: url('./img/hero.png');
@@ -236,23 +240,19 @@ input[type="checkbox"]:checked + label::after {
   cursor: pointer;
 }
 
-/* *********************************************************************************************************** */
-
 .popular {
   background-color: #1E252B;
   width: 100%;
-  height: auto;
 }
 
 .popular__container {
   margin: 0 auto;
-  border: 1px dashed green;
+  border: 1px dashed transparent;
   width: 1224px;
   height: 100%;
 }
 
 .popular__title {
-  border: 1px dashed green;
   margin-top: 200px;
   font-family: 'Poppins';
   font-style: normal;
@@ -276,7 +276,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .popular__grid-container {
-  border: 1px dashed green;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 100px;
@@ -285,7 +284,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .popular__grid-item {
-  border: 1px dashed green;
   border-radius: 15px;
   display: flex;
   width: 392px;
@@ -293,17 +291,20 @@ input[type="checkbox"]:checked + label::after {
   transition: 0.3s;
 }
 
-.popular__grid-item:hover {
+.popular__grid-item:hover, .newcomer-tools__item:hover {
   transition: 0.3s;
   transform: translate(0, -20px);
   background: rgba(40, 48, 54, 0.6);
   backdrop-filter: blur(25px);
 }
 
+.popular__grid-item:hover button.tool__controls-visit {
+  border: 2px solid #FF6E30;
+}
+
 .popular__load-more {
   display: flex;
   justify-content: center;
-  border: 1px dashed green;
   margin-top: 100px;
   height: auto;
   width: 100%;
@@ -320,6 +321,7 @@ input[type="checkbox"]:checked + label::after {
 
 .popular__load-more-button:hover {
   background-color: #283036;
+  border-color: #FF6E30;
 }
 
 .popular__load-more-button a {
@@ -333,7 +335,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .tool {
-  border: 1px dashed red;
   align-self: center;
   display: flex;
   justify-content: space-between;
@@ -345,11 +346,9 @@ input[type="checkbox"]:checked + label::after {
 
 .tool__header {
   display: flex;
-  border: 1px dashed green;
 }
 
 .tool__logo {
-  border: 1px dashed green;
   width: 64px;
   height: 64px;
 }
@@ -360,12 +359,10 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .tool__title {
-  border: 1px dashed green;
   margin-left: 30px;
 }
 
 .tool__title-name {
-  border: 1px dashed green;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -375,7 +372,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .tool__title-license-type {
-  border: 1px dashed green;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
@@ -385,7 +381,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .tool__description {
-  border: 1px dashed green;
   width: 100%;
   height: 60px;
   font-family: 'Poppins';
@@ -397,54 +392,49 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .tool__controls {
-  border: 1px dashed green;
   width: 100%;
   height: 42px;
   display: flex;
   justify-content: space-between;
 }
 
-.tool__controls-favorites {
-  border: 1px dashed green;
-}
-
 .tool__controls-like {
-  border: 1px dashed green;
   width: 42px;
   height: 42px;
   border-radius: 8px;
+  border-style: none;
   background: #1E252B;
   background-image: url('./img/like-button.svg');
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.2s;
 }
 
 .tool__controls-like:hover {
+  transition: 0.3s;
   background-image: url('./img/like-button-hover.svg');
   background-color: #283036;
   box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
 }
 
 .tool__controls-add {
-  border: 1px dashed green;
   width: 42px;
   height: 42px;
   border-radius: 8px;
+  border-style: none;
   margin-left: 6px;
   background: #1E252B;
   background-image: url('./img/add-button.svg');
   background-repeat: no-repeat;
   background-position: center;
+  transition: 0.3s;
 }
 
 .tool__controls-add:hover {
+  transition: 0.3s;
   background-image: url('./img/add-button-hover.svg');
   background-color: #283036;
   box-shadow: 0px 5px 10px -3px rgba(18, 18, 18, 0.15);
-}
-
-.tool__controls-visit {
-  border: 1px dashed green;
 }
 
 .tool__controls-visit {
@@ -452,16 +442,18 @@ input[type="checkbox"]:checked + label::after {
   height: 42px;
   background: #1E252B;
   border-radius: 8px;
-
+  border-style: none;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.55);
+  transition: 0.3s;
 }
 
 .tool__controls-visit:hover {
+  transition: 0.3s;
   background: #FF6E30;
   border-radius: 8px;
   color: #FFFFFF;
@@ -473,14 +465,14 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .brands__container {
-  border: 1px dashed green;
+  border: 1px dashed transparent;
   margin: 0 auto;
   width: 1224px;
   height: auto;
 }
 
 .brands__wrapper {
-  border: 1px dashed green;
+  border: 1px dashed transparent;
   margin-top: 200px;
   width: 1224px;
   height: 253px;
@@ -501,10 +493,92 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .brands__logos {
-  border: 1px dashed green;
   display: flex;
   justify-content: space-between;
   margin: 55px auto 0;
   width: 1059px;
   height: auto;
+}
+
+.newcomer-tools {
+  background-color: #1E252B;
+  width: 100%;
+}
+
+.newcomer-tools__container {
+  border: 1px dashed transparent;
+  margin: 0 auto;
+  width: 1224px;
+}
+
+.newcomer-tools__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
+  width: 100%;
+}
+
+.newcomer-tools__left-section {
+  width: 427px;
+}
+
+.newcomer-tools__title {
+  margin-top: 20px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.newcomer-tools__description {
+  margin-top: 30px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.newcomer-tools__explore {
+  margin-top: 60px;
+}
+
+.newcomer-tools__explore-button {
+  width: 198px;
+  height: 58px;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #FF6E30;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.newcomer-tools__explore-button:hover {
+  opacity: 0.7;
+}
+
+.newcomer-tools__right-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 50px;
+}
+
+.newcomer-tools__item {
+  display: flex;
+  width: 288px;
+  height: 284px;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.newcomer {
+  width: 245px;
 }
