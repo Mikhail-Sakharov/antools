@@ -18,7 +18,7 @@ body {
   height: 100%;
 }
 
-.header__logo {
+.logo {
   width: auto;
   height: fit-content;
   align-self: flex-end;
@@ -735,20 +735,17 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .join {
-  border: 1px dashed green;
   background-color: #1E252B;
   width: 100%;
 }
 
 .join__container {
-  border: 1px dashed green;
   margin: 0 auto;
   width: max-content;
 }
 
 .join__wrapper {
   margin-top: 250px;
-  border: 1px dashed green;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -756,7 +753,6 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .join__title {
-  border: 1px dashed green;
   margin-top: 0;
   font-family: 'Poppins';
   font-style: normal;
@@ -770,7 +766,6 @@ input[type="checkbox"]:checked + label::after {
 .join__description {
   width: 427px;
   margin-top: 25px;
-  border: 1px dashed green;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
@@ -831,4 +826,88 @@ input[type="checkbox"]:checked + label::after {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.footer {
+  background-color: #1E252B;
+  width: 100%;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  margin-top: 240px;
+  height: 351px;
+}
+
+.footer__wrapper-inner {
+  display: flex;
+  align-items: flex-end;
+  width: 1224px;
+}
+
+.footer__copyrights {
+  width: 416px;
+  height: 281px;
+}
+
+.footer__contacts {
+  width: 312px;
+  height: 281px;
+}
+
+.footer__categories {
+  width: 227px;
+  height: 281px;
+}
+
+.footer__info {
+  width: 269px;
+  height: 281px;
+}
+
+.footer__copyrights-title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__copyrights-description {
+  width: 260px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer__wrapper h3 {
+  margin-top: 0;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer__item, .footer__item a {
+  text-decoration: none;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.footer__item a:hover {
+  color: rgba(255, 255, 255, 0.9);
 }
